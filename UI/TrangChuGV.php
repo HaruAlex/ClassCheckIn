@@ -6,7 +6,7 @@
     <title>Giảng viên - Hệ thống điểm danh</title>
 
     <!-- LINK CSS -->
-    
+    <link rel="stylesheet" href="../CSS/GiangVien.css">
     <link rel="stylesheet" href="../CSS/TrangChuGV.css">
     <?php include('GiangVien.php'); ?>
 </head>

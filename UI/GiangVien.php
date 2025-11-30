@@ -8,7 +8,7 @@
     <div class="dropdown">
         <span class="dropbtn">Quản lý lớp học phần</span>
         <div class="dropdown-content">
-            <a href="#">Danh sách lớp sinh viên</a>
+            <a href="DSLHP.php">Danh sách lớp sinh viên</a>
         </div>
     </div>
 
@@ -34,7 +34,7 @@
         </div>
     </div>
 
-    <a href="#">Thống kê chuyên cần</a>
+    <a href="ThongKeGV.php">Thống kê chuyên cần</a>
 
     <a href="#">Đăng xuất</a>
 </div>
