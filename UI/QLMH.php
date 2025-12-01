@@ -2,7 +2,7 @@
 <html lang="vi">
 <head>
 <meta charset="UTF-8">
-<title>Danh sách lớp học phần</title>
+<title>Quản lý môn học</title>
     <link rel="stylesheet" href="../CSS/GiangVien.css">
     <link rel="stylesheet" href="../CSS/GiangVienQL.css">
     <?php include('GiangVien.php'); ?>
@@ -10,40 +10,47 @@
 </head>
 <body>
 <div class="main-content">
-<h2>Danh sách lớp học phần</h2>
 
-<input type="text" id="searchInput" placeholder="Tìm kiếm lớp học phần...">
+<h2>Quản lý môn học</h2>
 
-<table id="classTable">
+<input type="text" id="searchInput" placeholder="Tìm kiếm môn học...">
+
+<table id="subjectTable">
     <thead>
         <tr>
-            <th>Mã lớp HP</th>
-            <th>Môn học</th>
-            <th>Thứ</th>
-            <th>Tiết</th>
-            <th>Phòng</th>
-            <th>Học kỳ</th>
-            <th>Năm học</th>
+            <th>Mã môn</th>
+            <th>Tên môn học</th>
+            <th>Số tín chỉ</th>
+            <th>Khoa</th>
+            <th>Mô tả</th>
         </tr>
     </thead>
+
     <tbody>
         <tr>
             <td>CT101</td>
             <td>Lập trình C</td>
-            <td>2</td>
-            <td>1-3</td>
-            <td>A102</td>
-            <td>HK1</td>
-            <td>2024-2025</td>
+            <td>3</td>
+            <td>CNTT</td>
+            <td>Môn học cơ bản về lập trình</td>
         </tr>
-       
+
+        <tr>
+            <td>CT203</td>
+            <td>Cấu trúc dữ liệu</td>
+            <td>4</td>
+            <td>CNTT</td>
+            <td>Học về các cấu trúc dữ liệu cơ bản</td>
+        </tr>
     </tbody>
 </table>
+
 </div>
 
 <script>
+// ======= TÌM KIẾM MÔN HỌC =======
 const searchInput = document.getElementById('searchInput');
-const table = document.getElementById('classTable').getElementsByTagName('tbody')[0];
+const table = document.getElementById('subjectTable').getElementsByTagName('tbody')[0];
 
 searchInput.addEventListener('keyup', function() {
     const filter = searchInput.value.toLowerCase();
@@ -52,8 +59,9 @@ searchInput.addEventListener('keyup', function() {
     for (let i = 0; i < rows.length; i++) {
         const cells = rows[i].getElementsByTagName('td');
         let match = false;
+
         for (let j = 0; j < cells.length; j++) {
-            if (cells[j].textContent.toLowerCase().indexOf(filter) > -1) {
+            if (cells[j].textContent.toLowerCase().includes(filter)) {
                 match = true;
                 break;
             }

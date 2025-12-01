@@ -1,7 +1,7 @@
 
 <!-- Sidebar -->
 <div class="sidebar">
-    <h2 style="margin-bottom: 25px;">Giảng viên</h2>
+    <h1 style="margin-bottom: 25px;">Giảng viên</h1>
 
     <a href="TrangChuGV.php">Trang chủ</a>
 
@@ -15,22 +15,22 @@
     <div class="dropdown">
         <span class="dropbtn">Quản lý danh sách môn học</span>
         <div class="dropdown-content">
-            <a href="#">Danh sách môn học</a>
+            <a href="QLMH.php">Danh sách môn học</a>
         </div>
     </div>
 
     <div class="dropdown">
         <span class="dropbtn">Quản lý điểm danh</span>
         <div class="dropdown-content">
-            <a href="#">Tạo biểu điểm danh</a>
-            <a href="#">Cập nhập biểu điểm danh</a>
+            <a href="TaoDiemDanh.php">Tạo biểu điểm danh</a>
+            <a href="CapNhapDiemDanh.php">Cập nhập biểu điểm danh</a>
         </div>
     </div>
 
     <div class="dropdown">
         <span class="dropbtn">Quản lý danh sách điểm danh</span>
         <div class="dropdown-content">
-            <a href="#">Danh sách phiên</a>
+            <a href="PhienDiemDanh.php">Danh sách phiên</a>
         </div>
     </div>
 
